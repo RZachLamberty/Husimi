@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                  %%
+%%  March Meeting 2013 Abstract (second draft)      %%
+%%                                                  %%
+%%      Zach Lamberty                               %%
+%%      Nov. 5, 2012                                %%
+%%                                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% set the document class to that of revtex4-1 with the general option AIP.
+% Other options:
+%   nofootinbib --  Keeps footnotes on pages they are located and doesn't try to put them in the bib.  Leaves bib items alone.
+%%% \documentclass[aps, superscriptaddress]{revtex4-1}
+\documentclass[aps]{revtex4-1}
+
+
+% Open any necessary packages.
+\usepackage{amsfonts}           % AMS packages
+\usepackage{amssymb}            % ^
+\usepackage{amsmath}            % ^
+\usepackage{latexsym}           % For the "normal" symbol (and other funky binary operators)
+\usepackage{dcolumn}            % Align table columns on decimal point
+%\usepackage[dvips]{graphicx}   % For production with eps / jpg figures
+\usepackage{enumerate}
+\usepackage{epstopdf}           % Can incorporate eps in the above pdftex
+\usepackage{fancyhdr}           % Does exactly what it says it will
+\usepackage[pdftex]{graphicx}   % For production with pdf figures
+\usepackage{hyperref}           % Allow for hyperlinks
+\usepackage{setspace}           % Allows us to change spacings
+\usepackage{xspace}             % To include spaces after newly defined commands when they are expecting arguments
+\usepackage{subfigure}          % Gives us the ability to put several figures side-by-side within one.
+\usepackage{bm}                 % A better "bold math" package -- any math symbol can be emboldened with the command \bm{*}
+%\usepackage[table]{xcolor}      % Alternating colors for table rows via the \rowcolors{<starting row>}{<odd color>}{<even color>} command
+\usepackage[usenames]{color}      % Color text
+\usepackage{multirow}           %   Have column entries in tables span multiple rows
+
+% Chose our headings.  Some options:
+%   plain:      empty header, p. on the bottom center.  Default
+%   headings:   empty footer, current chapter & p. no. in the header
+%   empty:      both empty.
+%   fancy:      Left, center, and right options.  Use package "fancyhdr" with commands \*head{text}, * = l,c,r
+\pagestyle{plain}
+
+%setting up our fancy header
+%\lhead{Homework 6 Solutions}
+%\chead{Zach Lamberty}
+%\rhead{Physics 1203, Spring 2010}
+
+%sets indent on the paragraph
+%\setlength{\parindent}{-.05in}
+
+%set the spacing
+%\onehalfspacing
+
+%set our margins for single sided
+%\setlength{\oddsidemargin}{.25in}
+%\setlength{\evensidemargin}{.25in}
+
+%set our textwidth
+%\setlength{\textwidth}{6in}
+%\setlength{\headwidth}{6in}
+
+% Define any new commands
+\newcommand{\bp}[1]{\textbf{ Problem #1} \\}
+\newcommand{\ud}{\text{ m}}
+\newcommand{\uv}{\text{ m/s}}
+\newcommand{\ua}{\text{ m/${\text{s}}^2$}}
+\newcommand{\ut}{\text{ s}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\br}{\mathbf{r}}
+
+
+\begin{document}
+
+%Title.  Two "affiliation" class options are groupedaddress (default) and superscriptaddress
+\title{DMRG Study of the $S>1/2$ quantum Heisenberg Antiferromagnet on a Kagome-like lattice without loops}
+\date{\today}
+
+\author{\firstname{R. Zach} Lamberty}
+\author{Hitesh Changlani}
+\author{\firstname{C. L.} Henley}
+\affiliation{Cornell University, Ithaca, New York, 14853}
+
+\begin{abstract}
+The Kagome quantum Heisenberg antiferromagnet is a prime candidate for the realization of a quantum spin liquid. Though many of the experimental realizations of this model have $S>1/2$, theoretical and computational studies for these spin values have proven difficult. To study this larger spin regime, we consider the quantum Heisenberg antiferromagnet for $S\ge1/2$ on the Husimi cactus, a graph of corner sharing triangles each of whose centers is a vertex of a Bethe lattice. Our method is a DMRG procedure tailored for tree graphs $[$1$]$ and is thus well suited to our models; by contrast, such $S>1/2$ models are virtually intractable by exact diagonalization on the kagome lattice.
+
+Our focus is the possible transition(s) as $S$ is increased from a spin liquid at $S=1/2$ to the coplanar ordered state known to be stable in the large $S$ limit $[$2$]$. Since the geometry is like the Kagome lattice locally, properties dominated by nearest-neighbor spin correlations should be captured by the same interactions on the Husimi cactus; on the other hand, the cactus lacks loops, so properties dependent on them cannot be captured.  As a proof of principle we also investigate the quantum XXZ model with on-site anisotropy for $S=1$, and compare it to previous work $[$3$]$.
+
+This work is supported by the National Science Foundation through a Graduate Research Fellowship to R. Zach Lamberty, as well as grant DMR-0552461.\\
+\\
+\noindent
+% References: 
+$[$1$]$ H. J. Changlani, S. Ghosh, C. L. Henley, A. M. L\"{a}uchli, arXiv:1208.1773v1 (2012).\\
+$[$2$]$ B. Doucot and P. Simon, J. Phys. A \textbf{31}, 5855 (1998).\\
+$[$3$]$ S. V. Isakov and Y. B. Kim, Phys. Rev. B \textbf{79}, 094408 (2009).\\
+
+\end{abstract}
+\maketitle
+
+\end{document}

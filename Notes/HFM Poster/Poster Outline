@@ -1,0 +1,55 @@
+I.  Motivation / Intro
+    
+    A.  Kagome and large spins
+        
+        1.  S = 1/2, Elser & Zeng, Yan White and Huse
+        2.  S = 1, Xu & Moore / Isakov and Kim
+        3.  S = 3/2, Lauchli
+        4.  S = 5/2, ?
+        5.  Large S, Sachdev
+        6.  List real materials where they exist
+    
+    B.  Large spins difficult, exponential hilbert spaces, etc.
+    
+    C.  DMRG can be applied to any loopless hierarchical system
+    
+    D.  Husimi Cactus is an option (has been used before as well, Elser (and Zeng?) )
+    
+    E.  Spin liquid state expected for S = 1/2, but known to be ordered for large
+        S ( Doucot and Simon, Chandra and Doucot, etc )
+
+II. Method
+    
+    A.  DMRG (cite White)
+    B.  Picture
+    C.  Hierarchical lattice is all we need
+
+III.Results
+    
+    0.  Expectations for Cactus
+        
+        1.  Large S ( Doucot papers again, maybe Sachdev )
+        2.  Small S (does it exist?  Elser maybe?)
+        3.  Scaling of correlation functions in ordered states
+    
+    A.  Heisenberg Point
+    
+        1.  S = 1
+            a.  Picture here, probably
+        
+        2.  S = 2
+        
+        3.  Table of "values" obtained this way.
+    
+    B.  Spin = 1, Elsewhere in the Jx / d plane
+        
+        1.  Comparison to Isakov et al.
+            a.  Several plots here
+        
+        2.  Comparison to Moore and others ( if possible )
+
+
+IV. Speculation / Conclusions
+    
+    A.  I have none.  Would like to plot the transition as a function of spin
+        size.  This will be hard.
